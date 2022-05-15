@@ -45,7 +45,9 @@
   
   <tbody>
     {% if allTodo|length == 0 %}
-        no record 
+    <div class="alert alert-dark" role="alert">
+      No todos found. Add your first todo now!
+    </div> 
     {% else %}
     <table class="table">
 
@@ -73,12 +75,13 @@
 
       </td>
     </tr>
+    {% endfor %}
   </tbody>
 </table>
-    {% endfor %}
+   
     {% endif %}
   
-    </div>
+</div> 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
